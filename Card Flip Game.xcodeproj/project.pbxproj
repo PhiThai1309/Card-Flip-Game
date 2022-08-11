@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3446F41B28A4F6D300FA1C4C /* Card_Flip_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F41A28A4F6D300FA1C4C /* Card_Flip_GameApp.swift */; };
-		3446F41D28A4F6D300FA1C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F41C28A4F6D300FA1C4C /* ContentView.swift */; };
 		3446F41F28A4F6D400FA1C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3446F41E28A4F6D400FA1C4C /* Assets.xcassets */; };
 		3446F42228A4F6D400FA1C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3446F42128A4F6D400FA1C4C /* Preview Assets.xcassets */; };
+		3446F42A28A4F71600FA1C4C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F42928A4F71600FA1C4C /* CardModel.swift */; };
+		3446F42E28A4F74A00FA1C4C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F42D28A4F74A00FA1C4C /* MenuView.swift */; };
+		3446F43028A4F75C00FA1C4C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F42F28A4F75C00FA1C4C /* CardView.swift */; };
+		3446F43228A4F77000FA1C4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F43128A4F77000FA1C4C /* ContentView.swift */; };
+		3446F43528A4F7B900FA1C4C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F43428A4F7B900FA1C4C /* HomeView.swift */; };
+		3446F43728A4F7C900FA1C4C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446F43628A4F7C900FA1C4C /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3446F41728A4F6D300FA1C4C /* Card Flip Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Card Flip Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3446F41A28A4F6D300FA1C4C /* Card_Flip_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_Flip_GameApp.swift; sourceTree = "<group>"; };
-		3446F41C28A4F6D300FA1C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3446F41E28A4F6D400FA1C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3446F42128A4F6D400FA1C4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3446F42928A4F71600FA1C4C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		3446F42D28A4F74A00FA1C4C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		3446F42F28A4F75C00FA1C4C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3446F43128A4F77000FA1C4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3446F43428A4F7B900FA1C4C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3446F43628A4F7C900FA1C4C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		3446F41928A4F6D300FA1C4C /* Card Flip Game */ = {
 			isa = PBXGroup;
 			children = (
+				3446F42B28A4F72D00FA1C4C /* View */,
+				3446F42828A4F6F900FA1C4C /* Model */,
 				3446F41A28A4F6D300FA1C4C /* Card_Flip_GameApp.swift */,
-				3446F41C28A4F6D300FA1C4C /* ContentView.swift */,
 				3446F41E28A4F6D400FA1C4C /* Assets.xcassets */,
 				3446F42028A4F6D400FA1C4C /* Preview Content */,
 			);
@@ -65,6 +76,42 @@
 				3446F42128A4F6D400FA1C4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3446F42828A4F6F900FA1C4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3446F42928A4F71600FA1C4C /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3446F42B28A4F72D00FA1C4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3446F43328A4F7A900FA1C4C /* HomeView */,
+				3446F42C28A4F73400FA1C4C /* CardView */,
+				3446F42D28A4F74A00FA1C4C /* MenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3446F42C28A4F73400FA1C4C /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				3446F42F28A4F75C00FA1C4C /* CardView.swift */,
+				3446F43128A4F77000FA1C4C /* ContentView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		3446F43328A4F7A900FA1C4C /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				3446F43428A4F7B900FA1C4C /* HomeView.swift */,
+				3446F43628A4F7C900FA1C4C /* MainView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3446F41D28A4F6D300FA1C4C /* ContentView.swift in Sources */,
+				3446F42E28A4F74A00FA1C4C /* MenuView.swift in Sources */,
+				3446F43728A4F7C900FA1C4C /* MainView.swift in Sources */,
+				3446F43228A4F77000FA1C4C /* ContentView.swift in Sources */,
 				3446F41B28A4F6D300FA1C4C /* Card_Flip_GameApp.swift in Sources */,
+				3446F43528A4F7B900FA1C4C /* HomeView.swift in Sources */,
+				3446F42A28A4F71600FA1C4C /* CardModel.swift in Sources */,
+				3446F43028A4F75C00FA1C4C /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
